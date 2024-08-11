@@ -34,7 +34,7 @@ docker exec -it sapataria cqlsh
 Isso abrirá o shell CQL dentro do container.
 
 
-7. Execute os scripts: Agora você pode copiar e colar os scripts disponíveis neste repositório diretamente no shell CQL. Comece com o script de criação do schema (squema.cql)
+7. Execute os scripts: Agora você pode copiar e colar os scripts disponíveis neste repositório diretamente no shell CQL. Comece com o script de criação do schema (schema.cql)
 
 
 8. Depois de criar o schema, você pode executar o script de inserção em BATCH (batch_insertion.cql)
