@@ -1,6 +1,6 @@
 # data-architecture-integration-and-ingestion
 
-1. Primeiro, certifique-se de que você tem o Docker instalado em sua máquina. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial do Docker. 
+1. Primeiro, certifique-se de que você tem o Docker instalado em sua máquina. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial do Docker. [Acesse](https://www.docker.com/products/docker-desktop/)
 
 
 2. Baixe a imagem do Cassandra: Abra um terminal e execute o seguinte comando:
