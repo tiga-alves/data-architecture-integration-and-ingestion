@@ -1,5 +1,3 @@
-USE sapataria;
-
 -- Batch para inserção de clientes
 BEGIN BATCH
   INSERT INTO clientes (id_cliente, nome, cpf, endereco, cep, email, telefone) VALUES 
