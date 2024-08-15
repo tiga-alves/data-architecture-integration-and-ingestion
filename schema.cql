@@ -12,18 +12,18 @@ CREATE TABLE IF NOT EXISTS clientes (
     endereco text,
     cep text,
     email text,
-    telefone text
+    telefones map<text, text>
 );
 
 -- Tabela de pedidos
 CREATE TABLE IF NOT EXISTS pedidos (
     id_pedido UUID,
-    cliente TEXT,
-    endereco TEXT,
-    cep TEXT,
-    itens LIST<TEXT>,
-    qtdes LIST<INT>,
-    valor_pago DECIMAL,
+    cliente text,
+    endereco text,
+    cep text,
+    item text,
+    qtde int,
+    valor_pago decimal,
     PRIMARY KEY ((id_pedido))
 );
 
@@ -34,8 +34,7 @@ CREATE TABLE IF NOT EXISTS produtos (
     nome text,
     modelo text,
     fabricante text,
-    cor text,
-    tamanho text
+    estoque map<text, map<text, int>>
 );
 
 -- Índices secundários para busca
