@@ -68,4 +68,48 @@ VALUES (uuid(), 'Fernanda Lima', 'Av J, 2222', '66666-777', 'Produto 10', 3, 180
 
 APPLY BATCH;
 
+-- Inserções em lote para a tabela produtos
+BEGIN BATCH
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'TNS001', 'Tênis Esportivo Runner', 'Runner Pro', 'SportShoes', 
+    {'vermelho': {'38': 10, '39': 15, '40': 20}, 'azul': {'38': 8, '39': 12, '40': 18}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'SCL002', 'Sapato Social Elegance', 'Classic', 'FormalFootwear', 
+    {'preto': {'40': 5, '41': 8, '42': 10}, 'marrom': {'40': 4, '41': 6, '42': 8}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'SND003', 'Sandália Verão', 'Tropical', 'BeachWalk', 
+    {'bege': {'35': 15, '36': 20, '37': 18}, 'branco': {'35': 12, '36': 18, '37': 15}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'BTA004', 'Bota Inverno', 'Snowstorm', 'WinterBoots', 
+    {'preto': {'37': 8, '38': 10, '39': 12}, 'marrom': {'37': 6, '38': 9, '39': 11}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'MCS005', 'Mocassim Conforto', 'SoftStep', 'ComfortWalk', 
+    {'azul': {'41': 7, '42': 9, '43': 6}, 'verde': {'41': 5, '42': 7, '43': 4}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'SPT006', 'Sapatilha Bailarina', 'Pirouette', 'DanceFeet', 
+    {'rosa': {'34': 20, '35': 25, '36': 22}, 'roxo': {'34': 18, '35': 23, '36': 20}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'TNC007', 'Tênis Casual StreetStyle', 'Urban', 'CityWalker', 
+    {'branco': {'39': 14, '40': 18, '41': 16}, 'cinza': {'39': 12, '40': 16, '41': 14}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'SCP008', 'Scarpin Elegância', 'Stiletto', 'HighHeels', 
+    {'vermelho': {'35': 10, '36': 12, '37': 8}, 'nude': {'35': 9, '36': 11, '37': 7}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'CHL009', 'Chinelo Conforto', 'BeachWave', 'SummerSteps', 
+    {'azul': {'39': 30, '40': 35, '41': 28}, 'verde': {'39': 28, '40': 33, '41': 26}});
+
+INSERT INTO produtos (id_produto, codigo, nome, modelo, fabricante, estoque)
+VALUES (uuid(), 'OXF010', 'Oxford Clássico', 'Gentleman', 'ClassicShoes', 
+    {'marrom': {'40': 6, '41': 8, '42': 7}, 'preto': {'40': 7, '41': 9, '42': 8}});
+
+APPLY BATCH;
 
